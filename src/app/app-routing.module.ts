@@ -12,6 +12,14 @@ const routes: Routes = [
     redirectTo: 'inicio',
     pathMatch: 'full'
   },
+  {
+    path: 'action-sheet',
+    loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
+  {
+    path: 'alert-sheet',
+    loadChildren: () => import('./pages/alert-sheet/alert-sheet.module').then( m => m.AlertSheetPageModule)
+  },
 ];
 
 @NgModule({
