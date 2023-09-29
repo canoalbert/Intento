@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActionSheetController} from "@ionic/angular";
 
 @Component({
   selector: 'app-action-sheet',
@@ -7,10 +8,58 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionSheetPage implements OnInit {
 
-  constructor() { }
+  constructor(private actionSheetCtrl: ActionSheetController) { }
 
   ngOnInit() {
 
   }
 
+  async moastrarActionSheet() {
+    const actionSheet = await this.actionSheetCtrl.create({
+      header: "Albums",
+      subHeader: "Artist",
+      backdropDismiss: false,
+      buttons: [
+          {
+            text: "Delete",
+            role: "destructive",
+            icon: "trash",
+            cssClass: "rojo",
+            handler: () => {
+              console.log("Delete pulsado");
+            }
+          },
+          {
+            text: "Share",
+            icon: "share-social",
+            handler: () => {
+              console.log("Compartir pulsado")
+            }
+          },
+          {
+            text: "Play",
+            icon: "caret-forward-circle",
+            handler: () => {
+              console.log("Play pulsado")
+            }
+          },
+          {
+            text: "Favorite",
+            icon: "heart",
+            handler: () => {
+              console.log("favorite pulsado")
+            }
+          },
+          {
+            text: "Cancel",
+            icon: "close",
+            handler: () => {
+              console.log("Cancel pulsado")
+            }
+          }
+        ]
+      }
+    );
+    await actionSheet.present();
+  }
 }

@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'grid-buttons',
     loadChildren: () => import('./pages/grid-buttons/grid-buttons.module').then( m => m.GridButtonsPageModule)
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
 ];
 
 @NgModule({

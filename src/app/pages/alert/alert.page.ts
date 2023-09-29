@@ -15,7 +15,7 @@ export class AlertPage implements OnInit {
   }
 
   async mostrarAlert() {
-    const alert = this.alertCtrl.create({
+    const alert = await this.alertCtrl.create({
       header: "Título del Alert",
       subHeader: "Subtítulo del Alert",
       message: "Esto es una alerta",
@@ -26,11 +26,41 @@ export class AlertPage implements OnInit {
         handler: () =>{
           console.log("Cancelar pulsar");
         }
+      },{
+        text: "Ok",
+        handler: () =>{
+          console.log("Ok pulsado");
+        }
       }]
+
     });
+    await alert.present();
   }
 
-  mostrarNombre() {
+  async mostrarNombre() {
+  const alert = await this.alertCtrl.create({
+    header: "Alert del Input",
+    subHeader: "escrib el nombre",
+    inputs: [{
+      name: "nombre",
+      type: "text",
+      placeholder: "Nombre"
 
+    }],
+    buttons: [{
+      text: "Cancelar",
+      role: "cancel",
+      handler: () => {
+        console.log("Cancelar pulsado")
+      }
+    },
+      {
+        text: "Ok",
+        handler:(data): void =>{
+          console.log("Ok pulsadp" + data);
+          this.titulo = data.nombre;
+    }
+      }]
+  }); await alert.present();
   }
 }
