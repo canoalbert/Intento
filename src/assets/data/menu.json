@@ -8,5 +8,10 @@
     "nombre": "Alert",
     "icono": "logo-apple-appstore",
     "ruta": "/alert"
+  },
+  {
+    "nombre": "Grid Buttons",
+    "icono": "",
+    "ruta": ""
   }
 ]

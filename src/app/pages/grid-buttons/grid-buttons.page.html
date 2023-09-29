@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">gridButtons</ion-title>
+
+    <ion-buttons slot="ends">
+      <ion-button color="danger"></ion-button>
+      <ion-icon name="heart"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons slot="ends">
+      <ion-button color="warning"></ion-button>
+      <ion-icon name="start"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="small">Small</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" size="medium">Medium</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" size="large">Large</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin-top">
+      <ion-col>
+        <ion-button routerLink="/alert" color="primary" fill="clear">Alert</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/alert" color="primary" fill="clear">A-sheet</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/inicio" color="terciary" fill="outline">Alert</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="ion-margin-top">
+    <ion-grid fixed="true">
+      <ion-row>
+        <ion-col *ngFor="let col of [1,2,3,4,5,6]">
+          Item {{col}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-grid>
+  <ion-grid fixed="true" class="ion-margin-top">
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let col of Array(12)">
+        <ion-card>
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+          <ion-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolorum earum ipsum odio
+            porro quo. Architecto aspernatur blanditiis deserunt dicta est excepturi fuga ipsum labore magnam maxime nam
+            non, possimus.
+          </ion-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
