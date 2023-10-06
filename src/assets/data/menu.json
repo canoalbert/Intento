@@ -11,12 +11,17 @@
   },
   {
     "nombre": "Grid Buttons",
-    "icono": "",
+    "icono": "grid",
     "ruta": "/grid-buttons"
   },
   {
     "nombre": "Avatar Buttons",
-    "icono": "",
+    "icono": "avatar",
     "ruta": "/avatar"
+  },
+  {
+    "nombre": "Cards",
+    "icono": "card",
+    "ruta": "/card"
   }
 ]
