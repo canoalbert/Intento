@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
 ];
 
 @NgModule({
