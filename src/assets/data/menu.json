@@ -28,5 +28,10 @@
     "nombre": "Fab",
     "icono": "car",
     "ruta": "/fab"
+  },
+  {
+    "nombre": "Slide",
+    "icono": "albums",
+    "ruta": "/slides"
   }
 ]
