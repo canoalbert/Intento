@@ -33,5 +33,10 @@
     "nombre": "Slide",
     "icono": "albums",
     "ruta": "/slides"
+  },
+  {
+    "nombre": "Listas",
+    "icono": "list",
+    "ruta": "/lista"
   }
 ]
