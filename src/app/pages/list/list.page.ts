@@ -17,7 +17,11 @@ export class ListPage implements OnInit {
 
   private cargarUsuarios() {
     this.dataService.getUsuarios().subscribe(
+      {
+        next: value => {
 
+        }
+      }
     )
   }
 }
