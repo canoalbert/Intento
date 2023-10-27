@@ -44,6 +44,14 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
   },
+  {
+    path: 'infinite-scroll2',
+    loadChildren: () => import('./pages/infinite-scroll2/infinite-scroll2.module').then( m => m.InfiniteScroll2PageModule)
+  },
+  {
+    path: 'slides2',
+    loadChildren: () => import('./pages/slides2/slides2.module').then( m => m.Slides2PageModule)
+  },
 ];
 
 @NgModule({

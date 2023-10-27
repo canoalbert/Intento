@@ -3,3 +3,5 @@ export interface Componente {
   icono: string;
   ruta: string;
 }
+
+

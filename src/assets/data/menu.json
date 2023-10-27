@@ -38,5 +38,20 @@
     "nombre": "Listas",
     "icono": "list",
     "ruta": "/lista"
+  },
+  {
+    "nombre": "Infinite Scroll",
+    "icono": "infinite",
+    "ruta": "/infinite-scroll"
+  },
+  {
+    "nombre": "Infinite Scroll 2",
+    "icono": "infinite-outline",
+    "ruta": "/infinite-scroll2"
+  },
+  {
+    "nombre": "Slides2",
+    "icono": "ellipsis-horizontal",
+    "ruta": "/slides2"
   }
 ]
