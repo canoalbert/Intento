@@ -58,5 +58,10 @@
     "nombre": "Modal",
     "icono": "phone-portrait",
     "ruta": "/modal"
+  },
+  {
+    "nombre": "Tabs",
+    "icono": "cog",
+    "ruta": "/tabs"
   }
 ]
