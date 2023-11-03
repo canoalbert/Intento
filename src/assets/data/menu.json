@@ -16,7 +16,7 @@
   },
   {
     "nombre": "Avatar Buttons",
-    "icono": "avatar",
+    "icono": "",
     "ruta": "/avatar"
   },
   {
@@ -53,5 +53,10 @@
     "nombre": "Slides2",
     "icono": "ellipsis-horizontal",
     "ruta": "/slides2"
+  },
+  {
+    "nombre": "Modal",
+    "icono": "phone-portrait",
+    "ruta": "/modal"
   }
 ]
